@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- [1] Google Ads 기본 추적 코드 (CCTV 설치) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-650402254"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-650402254');
+    </script>
+
+    <!-- [2] Google Ads 전환 이벤트 코드 (상담 신청 목표 달성 알림) -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-650402254/8TEUCInDn-AbEM6zkbYC',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <title>TAX PLANET - 인건비 NO? 기장료 6만원! 스마트 세무의 시작</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #111827; } /* 다크 모드 배경 */
+        .scroll-smooth { scroll-behavior: smooth; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .check-icon { color: #2563EB; margin-right: 0.5rem; flex-shrink: 0; }
+        .flow-arrow::after { content: '→'; position: absolute; top: calc(50% + 15px); left: 50%; transform: translate(-50%, -50%); font-size: 1.5rem; color: #FACC15; }
+        @media (max-width: 768px) { .flow-arrow::after { content: '↓'; top: 50%; } }
+        .floating-kakao { position: fixed; bottom: 30px; right: 30px; z-index: 100; animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+
+        /* 대시보드 전용 스타일 */
+        .neon-border { border: 1px solid #3b82f6; box-shadow: 0 0 10px #3b82f633; }
+        .neon-text-blue { color: #60a5fa; text-shadow: 0 0 5px #60a5faaa; }
+        .neon-text-purple { color: #c084fc; text-shadow: 0 0 5px #c084fcaa; }
+        .bg-card { background-color: #1f2937; } /* 카드 배경 */
+
+        /* 반응형 보강: 브라우저 폭이 줄어들거나 늘어나도 글자가 겹치지 않도록
+           단어 단위 줄바꿈과 최소 여백을 강제한다. */
+        * { word-break: keep-all; overflow-wrap: break-word; }
+        .header-inner { flex-wrap: wrap; row-gap: 0.5rem; }
+        nav.responsive-nav { flex-wrap: wrap; row-gap: 0.5rem; }
+        .profile-card { min-width: 0; }
+        .profile-avatar {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 9999px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #e5e7eb;
+        }
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center; /* 인물 얼굴이 상단에 있어 상단 기준으로 크롭 */
+            display: block;
+        }
+        @media (max-width: 640px) {
+            .profile-avatar { width: 8rem; height: 8rem; }
+        }
+    </style>
+</head>
+<body class="text-gray-100 scroll-smooth relative">
+
+    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center header-inner">
+            <div class="flex items-end">
+                <!-- 변경 완료: TAX PLANET -> 택스플래닛 -->
+                <div class="text-2xl font-black text-blue-400 tracking-tighter mr-2">택스플래닛</div>
+                <span class="text-sm font-bold text-gray-500 mb-1">세무회계</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 text-sm font-bold text-gray-400 responsive-nav">
+                <a href="#hero" class="hover:text-blue-400 transition">서비스 소개</a>
+                <a href="#dashboard" class="hover:text-blue-400 transition">스마트 대시보드</a>
+                <a href="#pricing" class="hover:text-blue-400 transition">요금 안내</a>
+                <a href="#consulting" class="hover:text-blue-400 transition">세무사 프로필</a>
+                <!-- 변경 완료: 무료상담 신청 -> 상담 신청 -->
+                <a href="#contact" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">상담 신청</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-40 pb-24 lg:pt-56 lg:pb-40 bg-gray-900 text-white overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('image_bg.jpg');">
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold mb-6 inline-block tracking-widest shadow-lg border border-blue-400 animate-pulse">1인 기업·프리랜서·직원 없는 사업자 맞춤형 플랜</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                복잡한 인건비 신고가 없으신가요?<br>
+                그렇다면 기장료는 <span class="text-yellow-400 border-b-4 border-yellow-400">월 6만원</span>입니다
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                불필요한 수수료는 과감히 덜어냈습니다.<br>
+                스마트 대시보드로 경영 정보는 실시간으로 관리하고, 비용 부담은 낮추세요.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 bg-yellow-400 text-blue-900 font-bold text-lg rounded-lg shadow-lg hover:bg-yellow-300 transition transform hover:-translate-y-1">
+                    지금 바로 혜택 확인하기
+                </a>
+            </div>
+            <!-- 삭제 완료: 하단 광고 책임자 문구 -->
+        </div>
+    </section>
+
+    <!-- 재설계된 대시보드 섹션 (Constraint 1 적용) -->
+    <section id="dashboard" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-400 font-bold tracking-wider uppercase text-sm">Smart Management Dashboard</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 mb-4">직관적이고 스마트한<br><span class="text-blue-400">자체 경영 대시보드</span></h2>
+                <p class="text-gray-400 text-lg">단순한 정보 나열을 넘어, 데이터를 분석하여 경영에 필요한 핵심 인사이트를 실시간으로 제안합니다.</p>
+            </div>
+
+            <!-- 대시보드 그리드 레이아웃 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- 1. 가용 자금 현황 (데이터 시각화 중심으로 재설계) -->
+                <div class="bg-card p-8 rounded-3xl neon-border fade-in">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-100">가용 자금 트렌드</h3>
+                        <span class="text-sm text-green-400 font-medium">전월 대비 <i class="fas fa-arrow-up"></i> 212.8%</span>
+                    </div>
+                    <!-- 원본 텍스트를 그래프로 변환 -->
+                    <div class="relative h-48 bg-gray-800 rounded-2xl p-4 flex items-end justify-center">
+                        <!-- 가상의 막대 그래프 -->
+                        <div class="w-8 h-[20%] bg-blue-700 rounded-t mr-2"></div>
+                        <div class="w-8 h-[35%] bg-blue-700 rounded-t mr-2"></div>
+                        <div class="w-8 h-[60%] bg-blue-700 rounded-t mr-2"></div>
+                        <div class="w-8 h-[100%] bg-blue-500 rounded-t mr-2 relative">
+                            <!-- 수정된 숫자: 2,345억 -->
+                            <span class="absolute -top-10 left-1/2 -translate-x-1/2 neon-text-blue font-bold text-lg">2,345억</span>
+                        </div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10 text-9xl text-gray-600 font-black">₩</div>
+                    </div>
+                    <div class="mt-6 flex justify-between text-sm text-gray-400">
+                        <span>전월: 1.9천만 원 증가</span>
+                        <span>입출금 계좌 등 5개 연동</span>
+                    </div>
+                </div>
+
+                <!-- 2. 입출금 및 외화 (구조 및 포커스 재설계) -->
+                <div class="bg-card p-8 rounded-3xl neon-border fade-in lg:col-span-2">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-100">최근 주요 입출금 및 자산 분포</h3>
+                        <button class="text-sm text-gray-400 hover:text-white transition">전체 계좌 보기 <i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 입출금 요약 (원본 데이터를 카드 형태로) -->
+                        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-sm text-gray-300">총 입출금 (5)</span>
+                                <i class="fas fa-exchange-alt text-lg text-yellow-400"></i>
+                            </div>
+                            <!-- 수정된 숫자: 1,234억 5,678만 -->
+                            <p class="text-3xl font-black text-white mb-2">1,234,525,685<span class="text-lg font-medium text-gray-400">원</span></p>
+                            <p class="text-sm text-red-400">변동내역: -234,345,551원</p>
+                        </div>
+                        <!-- 외화/예적금 요약 -->
+                        <div class="space-y-4">
+                            <div class="bg-gray-800 rounded-2xl p-5 border border-gray-700 flex justify-between items-center">
+                                <span class="text-sm text-gray-300"><i class="fas fa-globe mr-2 text-blue-400"></i>외화 (2)</span>
+                                <span class="text-lg font-bold text-white">+234,345,551원</span>
+                            </div>
+                            <div class="bg-gray-800 rounded-2xl p-5 border border-gray-700 flex justify-between items-center">
+                                <span class="text-sm text-gray-300"><i class="fas fa-hand-holding-usd mr-2 text-purple-400"></i>예적금 (2)</span>
+                                <!-- 수정된 숫자: 678억 9,012만원 -->
+                                <span class="text-lg font-bold text-white">678,901,200원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 카드 이용 현황 및 최적화 제안 (기능 고도화 적용) -->
+                <div class="bg-card p-8 rounded-3xl neon-border fade-in lg:col-span-2">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-100">카드 지출 분석 및 절세 최적화</h3>
+                        <span class="text-sm text-red-400 font-medium">전월 대비 <i class="fas fa-arrow-up"></i> 8% 지출 증가</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <!-- 지출 분포 막대 그래프 (원본 텍스트 기반 시각화) -->
+                        <div class="space-y-3">
+                            <!-- 수정된 숫자: 210억 9,876만 -->
+                            <p class="text-3xl font-black text-white mb-3">1,234,525,685원<span class="text-lg font-medium text-gray-400">원</span></p>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <p class="text-sm text-gray-400">주요 지출: 신한카드(26개) <span class="text-white">411,992원</span> <i class="fas fa-exclamation-triangle text-yellow-400 ml-1"></i></p>
+                        </div>
+                        <!-- 기능 고도화: 단순 정보 나열 대신 AI 기반 제안 -->
+                        <div class="bg-gray-800 rounded-2xl p-6 border-l-4 border-blue-500">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-magic text-2xl text-blue-400 mr-3"></i>
+                                <h4 class="text-lg font-bold text-white">AI 절세 최적화 제안</h4>
+                            </div>
+                            <p class="text-sm text-gray-300 leading-relaxed">
+                                신한카드의 <span class="neon-text-blue font-semibold">비업무용 지출 비율</span>이 높습니다.<br>
+                                업무 관련 지출 증빙을 강화하거나,<br>
+                                <span class="neon-text-purple font-semibold">[법인카드 사용 비율]</span>을 높이면<br>
+                                예상 소득세를 약 <span class="neon-text-blue font-bold">150만 원 더</span> 아낄 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. 실시간 손익 및 정산 (원본에 없는 기능 추가하여 대시보드 완성) -->
+                <div class="bg-card p-8 rounded-3xl neon-border fade-in">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-100">실시간 손익 요약</h3>
+                        <span class="text-sm text-blue-400">오늘 기준</span>
+                    </div>
+                    <div class="relative h-48 bg-gray-800 rounded-2xl p-6 flex flex-col justify-center space-y-3">
+                        <div class="flex justify-between items-baseline border-b border-gray-700 pb-2">
+                            <span class="text-sm text-gray-400">받을 돈</span>
+                            <span class="text-2xl font-bold text-green-400">2,345만 원</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-gray-700 pb-2">
+                            <span class="text-sm text-gray-400">줄 돈</span>
+                            <span class="text-2xl font-bold text-red-400">1,234만 원</span>
+                        </div>
+                        <div class="flex justify-between items-baseline pt-2">
+                            <span class="text-base text-gray-100 font-bold">남는 돈</span>
+                            <span class="text-3xl font-black neon-text-blue">1,111만 원</span>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs text-gray-500 mt-5"><i class="fas fa-info-circle mr-1"></i>계산서와 입출금을 매칭한 실시간 손익입니다.</p>
+                </div>
+
+            </div>
+
+            <p class="text-center text-gray-400 text-sm mt-12"><i class="fas fa-info-circle mr-1"></i> 대시보드의 데이터는 가상의 예시이며, 실제 사장님의 금융 데이터와 연동하여 실시간으로 업데이트됩니다.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-white text-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold tracking-wider uppercase text-sm">Reasonable Pricing</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 mb-4">기장료 <span class="text-blue-600">월 6만 원</span>,<br>아래의 서비스를 이용하세요.</h2>
+                <p class="text-gray-500 text-lg">복잡한 요금표는 지웠습니다. 오직 초기 사업자를 위한 투명한 단일 플랜입니다.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row border-2 border-blue-600">
+                    <!-- Left: Features -->
+                    <div class="md:w-3/5 p-8 md:p-12">
+                        <div class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold mb-4">온라인·크리에이터·소상공인 전용</div>
+                        <h3 class="text-2xl font-black text-gray-800 mb-6">올인원(All-in-One) 세무기장 플랜</h3>
+                        <ul class="space-y-5 text-gray-600 text-base">
+                            <li class="flex items-start"><span class="check-icon mt-1">✔</span> <div><strong>매월 기장 및 장부 작성</strong> (누락 없는 꼼꼼한 비용 처리)</div></li>
+                            <li class="flex items-start"><span class="check-icon mt-1">✔</span> <div><strong>부가가치세 신고 대행</strong> (연 2회 무료)</div></li>
+                            <li class="flex items-start"><span class="check-icon mt-1">✔</span> <div><strong>종합소득세 신고 대행</strong> <span class="text-red-500 font-bold ml-1 block mt-1 bg-red-50 p-2 rounded-lg text-sm"></span></div></li>
+                            <li class="flex items-start"><span class="check-icon mt-1">✔</span> <div><strong>전담 세무 직원 1:1 배정</strong> 및 상시 카카오톡 자문</div></li>
+                        </ul>
+                    </div>
+                    <!-- Right: Pricing -->
+                    <div class="md:w-2/5 bg-gradient-to-br from-blue-600 to-blue-800 p-8 md:p-12 text-white flex flex-col justify-center items-center text-center relative">
+                        <div class="absolute top-4 right-4 bg-yellow-400 text-blue-900 text-xs font-black px-3 py-1 rounded-full animate-bounce">가장 합리적!</div>
+                        <p class="text-blue-200 mb-2 font-medium">거품을 뺀 투명한 수수료</p>
+                        <div class="flex items-baseline mb-2">
+                            <span class="text-5xl lg:text-6xl font-black">60,000</span>
+                            <span class="text-xl ml-1">원</span>
+                        </div>
+                        <p class="text-sm text-blue-200 mb-8">(VAT 별도 / 월)</p>
+                        <a href="#contact" class="w-full py-4 bg-white text-blue-900 font-black text-lg rounded-xl shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">
+                            무료 상담 신청하기
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center text-gray-400 text-sm mt-6"><i class="fas fa-info-circle mr-1"></i> 연 매출 7,500만 원 초과 및 기장 난이도에 따라 합리적인 조정료가 발생할 수 있습니다. (성장 시 별도 안내)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 세무사 프로필 섹션 -->
+    <section id="consulting" class="py-24 bg-gray-50 text-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold tracking-wider uppercase text-sm">TAX PLANET Experts</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 mb-4">사장님의 든든한 파트너,<br><span class="text-blue-600">소영록 대표 세무사</span></h2>
+                <p class="text-gray-500 text-lg">스마트 시스템의 정확성에 전문 세무사의 깊이 있는 노하우를 더했습니다.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center bg-white p-10 rounded-3xl border border-gray-100 shadow-xl profile-card">
+                <!-- 세무사 프로필 사진 (구글 드라이브 이미지 링크 참조, .env 파일 기준) -->
+                <div class="profile-avatar">
+                    <img src="https://drive.google.com/uc?export=view&id=1J-3fTj4FN83De4lcLrlg1MqwRKnYaST4" alt="대표 세무사 소영록" loading="lazy" onerror="this.onerror=null;this.src='소영록.JPG';">
+                </div>
+                <div class="flex-1 text-center md:text-left min-w-0">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">대표 세무사 소영록</h3>
+                    <p class="text-blue-600 mb-6 text-sm font-bold">1인 기업 및 N잡러 전용 세무 컨설팅 전문가</p>
+                    <p class="text-gray-700 leading-relaxed text-sm mb-6">
+                        "단순히 장부를 대신 작성해 주는 것을 넘어, 자체 스마트 시스템과 대시보드를 활용해 사장님이 사업 현황을 명확히 파악하고 올바른 의사결정을 내릴 수 있도록 돕는 '경영 파트너'가 되겠습니다."
+                    </p>
+                    <ul class="space-y-3 text-gray-700 text-sm inline-block text-left">
+                        <li class="flex items-center"><span class="check-icon">✔</span> 택스플래닛 스마트 세무 시스템 검토 총괄</li>
+                        <li class="flex items-center"><span class="check-icon">✔</span> 1인 기업 및 N잡러 맞춤형 절세 컨설팅 전문가</li>
+                        <li class="flex items-center"><span class="check-icon">✔</span> 실시간 대시보드 기반 경영 진단 및 자문</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 상담 신청 섹션 -->
+    <section id="contact" class="py-24 bg-white text-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-sm font-semibold text-blue-600 mb-5 tracking-widest">REQUEST FREE CONSULTATION</div>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-black mb-10 leading-tight">
+                인건비 없는 사장님,<br>지금 바로 시작하세요
+            </h2>
+            <p class="text-lg text-gray-700 mb-16 max-w-2xl mx-auto leading-relaxed">
+                지금 바로 상담 신청하고, 내 사업에 꼭 맞는 합리적인 세무 서비스를 확인하세요.
+            </p>
+
+            <div class="max-w-4xl mx-auto bg-gray-50/50 p-10 lg:p-16 rounded-3xl border border-gray-100 shadow-xl text-left">
+                <!-- Formspree 연동: 제출 시 설정된 이메일로 폼 데이터 전송 -->
+                <form action="https://formspree.io/f/xvkpevjk" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <input type="hidden" name="_subject" value="[택스플래닛] 상담 신청 접수">
+                    <div>
+                        <label class="block text-sm font-bold mb-3 text-gray-800">사업자 상태 (개인/N잡러/프리랜서)</label>
+                        <input type="text" name="status" required class="w-full px-4 py-3.5 bg-white border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-inner" placeholder="예) 개인사업자, 프리랜서 등">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-3 text-gray-800">연락처</label>
+                        <input type="tel" name="phone" required class="w-full px-4 py-3.5 bg-white border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-inner" placeholder="010-0000-0000">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-bold mb-3 text-gray-800">문의 내용 (예: 인건비 지출 유무, 예상 연 매출 등)</label>
+                        <textarea name="message" class="w-full px-4 py-3.5 bg-white border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 h-28 shadow-inner" placeholder="문의 내용을 입력해주세요."></textarea>
+                        <div class="text-gray-400 text-xs mt-2.5">간단히 적어주시면 더욱 정확한 상담이 가능합니다.</div>
+                    </div>
+                    <div class="md:col-span-2 text-center md:text-right">
+                        <!-- [3] 상담 신청하기 버튼에 구글 애즈 알림 스위치 (onclick) 달기 -->
+                        <button type="submit" onclick="gtag_report_conversion()" class="w-full md:w-auto px-10 py-4 bg-yellow-400 text-blue-900 font-bold text-lg rounded-xl shadow-md hover:bg-yellow-300 transition transform hover:-translate-y-1">
+                            상담 신청하기
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 카카오톡 상담 버튼 -->
+    <a href="https://pf.kakao.com/_xxxx" target="_blank" class="floating-kakao">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" alt="카카오톡 상담" class="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition">
+    </a>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 footer-ad-info">
+        <div class="container mx-auto px-6 text-sm text-center">
+            <p class="mb-3 text-gray-300">상호명: 택스플래닛 세무회계 | 광고 책임자: 대표세무사 소영록</p>
+            <p>&copy; 2024 TAX PLANET. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
